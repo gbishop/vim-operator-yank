@@ -4,6 +4,8 @@ operator-yank
 This is plugin to yank text same as Vim default yank operator.
 But this depends on [operator-user](https://github.com/kana/vim-operator-user).
 
+Gary Bishop hacked it to copy the yanked text to the clipboard using OSC52.
+
 Requirements
 ---
 

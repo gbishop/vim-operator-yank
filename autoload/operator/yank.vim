@@ -32,6 +32,7 @@ function! operator#yank#do(motion_wise)  "{{{2
   if !s:is_empty_region()
     let reg = operator#user#register()
     execute 'normal!' '`["' . reg . 'y' . visual_command . '`]"'
+    call system('yank > /dev/tty', @0)
   end
   return
 endfunction
